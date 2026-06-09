@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a problem with the Octonomy TypeScript SDK.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: A minimal TypeScript snippet, the SDK call(s) made, and the observed result.
+      render: typescript
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Error details
+      description: The error class and, for an ApiError, its statusCode / code / requestId.
+      render: text
+    validations:
+      required: false
+  - type: input
+    id: sdk-version
+    attributes:
+      label: SDK version
+      description: e.g. 0.1.0 or a commit SHA.
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Node version (`node -v`), module system (ESM/CJS), bundler, and the Octonomy server version.
+    validations:
+      required: false

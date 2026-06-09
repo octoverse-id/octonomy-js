@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test / coverage artifacts
+coverage/
+*.tsbuildinfo
+
+# Tool caches
+.eslintcache
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor / OS noise
+.idea/
+.vscode/
+.DS_Store
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Local code review pipeline artifacts (keep the tracked placeholder)
+code-review/*
+!code-review/.gitkeep
