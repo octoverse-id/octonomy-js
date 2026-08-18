@@ -2,7 +2,13 @@
   "name": "@octoverse-id/octonomy",
   "version": "0.1.0",
   "description": "Official TypeScript SDK for Octonomy — multi-tenant tag management and taxonomy service.",
-  "keywords": ["octonomy", "tags", "taxonomy", "sdk", "api-client"],
+  "keywords": [
+    "octonomy",
+    "tags",
+    "taxonomy",
+    "sdk",
+    "api-client"
+  ],
   "license": "Apache-2.0",
   "homepage": "https://github.com/octoverse-id/octonomy-js#readme",
   "repository": {
@@ -28,7 +34,9 @@
       }
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "sideEffects": false,
   "engines": {
     "node": ">=18"
