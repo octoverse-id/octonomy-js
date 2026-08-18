@@ -10,7 +10,7 @@
  *   npx tsx examples/quickstart.ts
  */
 
-import { ConflictError, Octonomy, isApiError } from "../src";
+import { ConflictError, isApiError, Octonomy } from "../src";
 
 function env(key: string, fallback: string): string {
   const value = process.env[key];

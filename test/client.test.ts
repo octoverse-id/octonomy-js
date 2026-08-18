@@ -5,13 +5,13 @@ import {
   AuthenticationError,
   ConflictError,
   ForbiddenError,
+  isApiError,
   NotFoundError,
   Octonomy,
   type OctonomyConfig,
   OctonomyConfigError,
-  VERSION,
   ValidationError,
-  isApiError,
+  VERSION,
 } from "../src";
 import { header, makeClient } from "./helpers";
 
