@@ -18,7 +18,7 @@ for the stable REST **v1** API, shipped as dual ESM + CJS with full type declara
 npm install @octoverse-id/octonomy
 ```
 
-Requires Node 18+ (or any runtime with `axios`). Works in both ESM (`import`) and CommonJS (`require`).
+Requires Node 20+ (or any runtime with `axios`). Works in both ESM (`import`) and CommonJS (`require`).
 
 ## Quickstart
 
