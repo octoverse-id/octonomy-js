@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Breaking:** the minimum supported Node version is now 20 (`engines.node: ">=20"`). Node 18
+  reached end-of-life in April 2025 and the test runner no longer starts on it. The CI matrix now
+  covers Node 20, 22, and 24, and the bundle targets `node20`.
+
 ## [0.1.0] - 2026-06-09
 
 Initial release of the Octonomy TypeScript SDK. Targets the stable Octonomy REST **v1** API

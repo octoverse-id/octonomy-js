@@ -7,6 +7,14 @@ updates:
     open-pull-requests-limit: 10
     labels:
       - "dependencies"
+    # @types/node tracks the oldest Node we support (engines.node), not the
+    # newest release. Typechecking against newer definitions would let tsc
+    # accept APIs that do not exist for consumers on our minimum version, so
+    # this major moves by hand whenever the Node floor moves.
+    ignore:
+      - dependency-name: "@types/node"
+        update-types:
+          - "version-update:semver-major"
     # Bundle minor + patch bumps into a single PR. Major bumps still arrive as
     # their own PRs so they get individual review.
     groups:
